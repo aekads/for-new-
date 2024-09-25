@@ -27,7 +27,7 @@ app.use(session({
 }));
 
 // Route to get all data from 'screens' table
-app.get('/alldata', async (req, res) => {
+app.get('/alldata1', async (req, res) => {
   try {
     const result = await pool.query("SELECT * FROM screens ORDER BY screenid DESC");
     const allScreens = result.rows;
